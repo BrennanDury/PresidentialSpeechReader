@@ -27,7 +27,6 @@ public class Main {
     }
 
     public static void main(String[] args) {
-        test.helloWorld();
         TreeSet<President> presidents = presidents();
         for (President president : presidents) {
             int uses = president.getNumberUsesOfWord("a");
