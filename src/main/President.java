@@ -89,38 +89,53 @@ public class President {
         int uses = 0;
         String[] words = line.split(" ");
         for (String word : words) {
-            if (word.contains(target)) {
-                if (word.charAt(0) < 65 || word.charAt(0) > 90) {
-                    word = word.substring(1);
-                }
-                if (word.charAt(word.length() - 1) < 65 || word.charAt(word.length() - 1) > 90) {
-                    word = word.substring(0, word.length() - 1);
-                }
-                if (word.equals(target)) {
-                    uses++;
-                }
+            if (checkWordIsTarget(word, target)) {
+                uses++;
             }
         }
         return uses;
     }
 
     /**
-     * Returns true if the line has the target phrase. Not case sensitive. If the phrase is directly preceded or directly
+     * Returns true if the line has the target word. Not case sensitive. If the word is directly preceded or directly
      * followed by a letter, it does not count.
      * @param line the line to look through
-     * @param target the phrase to look for
-     * @return true if the line has the target phrase, false
+     * @param target the word to look for
+     * @return true if the line has the target word, false
      */
     private static boolean appearsInLine(String line, String target) {
         line = line.toUpperCase();
         target = target.toUpperCase();
-        while (line.contains(target)) { //the target is in the line, unless it is preceded or followed by a letter, then look for the next appearance
-            int start = line.indexOf(target);
-            if (       (start == 0 || line.charAt(start - 1) < 65 || line.charAt(start - 1) > 90) //checks theres not a letter immediately before
-                    && (start + target.length() == line.length() || line.charAt(start + target.length()) < 65 || line.charAt(start + target.length()) > 90)   ) { //checks theres not a letter immediately after
+        String[] words = line.split(" ");
+        for (String word : words) {
+            if (checkWordIsTarget(word, target)) {
+                 return true;
+            }
+        }
+        return false;
+    }
+
+    /**
+     * Checks if the word is the target word, considering punctuation. A word made of multiple words combined with a punctuation mark like a hyphen
+     * count as the target word if the target word is any of those words.
+     * @param word the word to check
+     * @param target the target word
+     * @return true if the word is the target word
+     */
+    private static boolean checkWordIsTarget(String word, String target) {
+        if (word.contains(target)) {
+            char charBefore = word.charAt(word.indexOf(target) - 1);
+            if (charBefore < 65 || charBefore > 90) {
+                word = word.substring(word.indexOf(target));
+            }
+            int indexAfter = word.indexOf(target) + target.length();
+            char charAfter = word.charAt(indexAfter);
+            if (charAfter < 65 || charAfter > 90) {
+                word = word.substring(0, indexAfter);
+            }
+            if (word.equals(target)) {
                 return true;
             }
-            line = line.substring(line.indexOf(target) + 1);
         }
         return false;
     }
