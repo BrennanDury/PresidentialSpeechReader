@@ -8,12 +8,12 @@ import java.util.*;
  * Contains a single static method to read a file for a candidate's lines. Supports the notation of the folders "texts" and "rev-texts".
  */
 public final class FileReader {
-    private static final File[] texts = new File("./texts").listFiles();
-    private static final File[] revTexts = new File("./rev-texts").listFiles();
+    private static final File[] texts = new File("./src/resources/texts").listFiles();
+    private static final File[] revTexts = new File("./src/resources/rev-texts").listFiles();
 
     private static final Map<String, Set<String>> revTags = new HashMap<String, Set<String>>(); //folder name to final name
     static {
-        revTags.put("Trump2020", new HashSet<String>(Arrays.asList("Donald Trump:", "Donald J. Trump:", "Main.President Trump:"))); //relies on an inconsistent rule of the text files to notate who is talking
+        revTags.put("Trump2020", new HashSet<String>(Arrays.asList("Donald Trump:", "Donald J. Trump:", "President Trump:"))); //relies on an inconsistent rule of the text files to notate who is talking
         revTags.put("Biden2020", new HashSet<String>(Arrays.asList("Joe Biden:", "Joe Biden :"))); //relies on an inconsistent rule of the text files to notate who is talking
     }
 
@@ -25,10 +25,10 @@ public final class FileReader {
      */
     public static Set<String> readFile(File speechFile) {
         try {
-            if (speechFile.getPath().startsWith("texts")) {
+            if (speechFile.getPath().startsWith("./src/resources/texts")) {
                 return readTextsFile(speechFile);
             }
-            if (speechFile.getPath().startsWith("rev-texts")) {
+            if (speechFile.getPath().startsWith("./src/resources/rev-texts")) {
                 return readRevTextsFile(speechFile);
             }
             throw new FileNotFoundException();

@@ -10,8 +10,8 @@ public class Main {
      * @return a chronologically ordered set of all presidents
      */
     private static TreeSet<President> presidents() {
-        TreeSet<President> presidents = presidentsByNotation("texts");
-        presidents.addAll(presidentsByNotation("rev-texts"));
+        TreeSet<President> presidents = presidentsByNotation("./src/resources/texts");
+        presidents.addAll(presidentsByNotation("./src/resources/rev-texts"));
         return presidents;
     }
 
@@ -29,7 +29,7 @@ public class Main {
     public static void main(String[] args) {
         TreeSet<President> presidents = presidents();
         for (President president : presidents) {
-            int uses = president.getNumberUsesOfWord("a");
+            int uses = president.getNumberUsesOfWord("democracy");
             int total = president.getTotalWords();
             System.out.println(president.getName() + ": " + uses + " out of " + total + " ratio: " + uses * 100000.0 / total);
         }
