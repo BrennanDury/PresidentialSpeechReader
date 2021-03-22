@@ -22,7 +22,7 @@ public final class FileReader {
 
     /**
      * Reads the file, returning a list of all lines spoken by the speaker as they appear in the file (case sensitive)
-     * @param speechFile the file to read (./texts/coolidge/coolidge_speeches_000)
+     * @param speechFile the file to read (./src/resources/texts/coolidge/coolidge_speeches_000)
      * @return a list of all lines spoken by the speaker
      * @throws FileNotFoundException if the file is not in any folder
      */
@@ -42,6 +42,12 @@ public final class FileReader {
         }
     }
 
+    /**
+     * Reads the file, returning a list of all lines spoken by the speaker as they appear in the file (case sensitive)
+     * @param speechFile the file to read (./src/resources/texts/coolidge/coolidge_speeches_000)
+     * @return a list of all lines spoken by the speaker
+     * @throws FileNotFoundException if the file is not in any folder
+     */
     public static Set<String> readTextsFile(File speechFile) throws FileNotFoundException {
         Set<String> linesBySpeaker = new HashSet<String>();
         Set<String> tags = createUpperCaseTags(speechFile.getParentFile().getName());
@@ -81,15 +87,22 @@ public final class FileReader {
         return tags;
     }
 
+    /**
+     * Reads the file, returning a list of all lines spoken by the speaker as they appear in the file (case sensitive)
+     * @param speechFile the file to read (./src/resources/rev-texts/Biden2020/08-21(1))
+     * @return a list of all lines spoken by the speaker
+     * @throws FileNotFoundException if the file is not in any folder
+     */
     public static Set<String> readRevTextsFile(File speechFile) throws FileNotFoundException {
         Set<String> linesBySpeaker = new HashSet<String>();
         Set<String> tags = revTags.get(speechFile.getParentFile().getName());
         boolean speaker = false;
         Scanner sc = new Scanner(speechFile);
         while (sc.hasNext()) {
-            String line = sc.nextLine().toUpperCase();
+            String originalLine = sc.nextLine();
+            String line = originalLine.toUpperCase();
             if (speaker) {
-                linesBySpeaker.add(line);
+                linesBySpeaker.add(originalLine);
                 speaker = false;
             } else {
                 for (String tag : tags) {
