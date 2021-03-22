@@ -34,6 +34,9 @@ public final class FileReader {
             if (speechFile.getPath().startsWith("./src/resources/rev-texts")) {
                 return readRevTextsFile(speechFile);
             }
+            if (speechFile.getPath().startsWith("./src/resources/test-rev-texts")) {
+                return readRevTextsFile(speechFile);
+            }
             throw new FileNotFoundException();
         } catch (FileNotFoundException e) {
             System.out.println("FileNotFound in readFile");
@@ -43,12 +46,12 @@ public final class FileReader {
     }
 
     /**
-     * Reads the file, returning a list of all lines spoken by the speaker as they appear in the file (case sensitive)
+     * Reads the file, returning a list of all lines spoken by the speaker as they appear in the file (case sensitive). Assumes the file is in the texts folder.
      * @param speechFile the file to read (./src/resources/texts/coolidge/coolidge_speeches_000)
      * @return a list of all lines spoken by the speaker
      * @throws FileNotFoundException if the file is not in any folder
      */
-    public static Set<String> readTextsFile(File speechFile) throws FileNotFoundException {
+    private static Set<String> readTextsFile(File speechFile) throws FileNotFoundException {
         Set<String> linesBySpeaker = new HashSet<String>();
         Set<String> tags = createUpperCaseTags(speechFile.getParentFile().getName());
         Scanner sc = new Scanner(speechFile);
@@ -88,12 +91,12 @@ public final class FileReader {
     }
 
     /**
-     * Reads the file, returning a list of all lines spoken by the speaker as they appear in the file (case sensitive)
+     * Reads the file, returning a list of all lines spoken by the speaker as they appear in the file (case sensitive). Assumes the file is in the rev-texts folder.
      * @param speechFile the file to read (./src/resources/rev-texts/Biden2020/08-21(1))
      * @return a list of all lines spoken by the speaker
      * @throws FileNotFoundException if the file is not in any folder
      */
-    public static Set<String> readRevTextsFile(File speechFile) throws FileNotFoundException {
+    private static Set<String> readRevTextsFile(File speechFile) throws FileNotFoundException {
         Set<String> linesBySpeaker = new HashSet<String>();
         Set<String> tags = revTags.get(speechFile.getParentFile().getName());
         boolean speaker = false;
