@@ -108,14 +108,14 @@ public class President {
         int indexBefore = line.indexOf(target) - 1;
         if (indexBefore > -1) {
             char charBefore = line.charAt(indexBefore);
-            if (charBefore > 65 && charBefore < 90) {
+            if (charBefore >= 'A' && charBefore <= 'Z') {
                 found = false;
             }
         }
         int indexAfter = line.indexOf(target) + target.length();
         if (indexAfter < line.length()) {
             char charAfter = line.charAt(indexAfter);
-            if (charAfter > 65 && charAfter < 90) {
+            if (charAfter >= 'A' && charAfter <= 'Z') {
                 found = false;
             }
         }
