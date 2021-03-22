@@ -11,11 +11,23 @@ public class PresidentTest {
     @Rule public Timeout globalTimeout = Timeout.seconds(10); // 10 seconds max per method tested
 
     @Test
-    public void wantTest() {
-        President hclinton = new President(new File("./src/resources/texts/hclinton"));
-        President trump = new President(new File("./src/resources/texts/trump"));
-        assert (trump.getNumberUsesOfWord("want") == 1359) : trump.getNumberUsesOfWord("want");
-        assert (hclinton.getNumberUsesOfWord("want") == 488) : hclinton.getNumberUsesOfWord("want");
+    public void revTextsIntegrationTest() {
+        President testPresident = new President(new File("./src/resources/test-rev-texts/test-rev-president"));
+        assert (testPresident.getNumberUsesOfWord("ipsum") == 3) : testPresident.getNumberUsesOfWord("ipsum");
+        assert (testPresident.getNumberUsesOfWord("ac") == 6) : testPresident.getNumberUsesOfWord("ac");
+        assert (testPresident.getNumberUsesOfWord("lorem") == 1) : testPresident.getNumberUsesOfWord("lorem");
+        assert (testPresident.getNumberUsesOfWord("id") == 8) : testPresident.getNumberUsesOfWord("id");
+        assert (testPresident.getNumberUsesOfWord("kitty") == 0) : testPresident.getNumberUsesOfWord("kitty");
+    }
+
+    @Test
+    public void textsIntegrationTest() {
+        President testPresident = new President(new File("./src/resources/test-texts/test-president"));
+        assert (testPresident.getNumberUsesOfWord("ipsum") == 3) : testPresident.getNumberUsesOfWord("ipsum");
+        assert (testPresident.getNumberUsesOfWord("ac") == 6) : testPresident.getNumberUsesOfWord("ac");
+        assert (testPresident.getNumberUsesOfWord("lorem") == 1) : testPresident.getNumberUsesOfWord("lorem");
+        assert (testPresident.getNumberUsesOfWord("id") == 8) : testPresident.getNumberUsesOfWord("id");
+        assert (testPresident.getNumberUsesOfWord("kitty") == 0) : testPresident.getNumberUsesOfWord("kitty");
     }
 
     @Test

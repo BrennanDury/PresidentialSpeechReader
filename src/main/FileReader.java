@@ -11,7 +11,7 @@ public final class FileReader {
     private static final File[] texts = new File("./src/resources/texts").listFiles();
     private static final File[] revTexts = new File("./src/resources/rev-texts").listFiles();
     private static final File[] testRevTexts = new File("./src/resources/test-rev-texts").listFiles();
-
+    private static final File[] testTexts = new File("./src/resources/test-texts").listFiles();
 
     private static final Map<String, Set<String>> revTags = new HashMap<String, Set<String>>(); //folder name to final name
     static {
@@ -33,6 +33,9 @@ public final class FileReader {
             }
             if (speechFile.getPath().startsWith("./src/resources/rev-texts")) {
                 return readRevTextsFile(speechFile);
+            }
+            if (speechFile.getPath().startsWith("./src/resources/test-texts")) {
+                return readTextsFile(speechFile);
             }
             if (speechFile.getPath().startsWith("./src/resources/test-rev-texts")) {
                 return readRevTextsFile(speechFile);
