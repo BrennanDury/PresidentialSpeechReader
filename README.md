@@ -5,4 +5,6 @@ The folder Trump2020 is a corpus compiled by me from https://www.rev.com/blog/tr
 I included all Trump transcripts from this site between the RNC convention on August 24th, 2020 and the election on November 3, 2020, not including the speech made on election
 night after all votes had been cast. The only transcripts not included are transcripts not including Donald Trump.
 The folder Biden2020 is a corpus compiled by me from https://www.rev.com/blog/transcripts?s=Joe+Biden. I included all Biden transcripts from this site between the DNC convention on August
-21, 2020 and the election on November 3, 2020, not including the speech made on election night after all votes had been cast.
+21, 2020 and the election on November 3, 2020, not including the speech made on election night after all votes had been cast. Results are slightly different from the search included in the grammarlab link.
+The exact explanation of this difference is not clear because the methodology of that search is not public. One apparent difference is due to a difference in defining a word where "hillaryclinton.com/calculator"
+doesn't count as an appearance of "com" for the search in the grammarlab link.
