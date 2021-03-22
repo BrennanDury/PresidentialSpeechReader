@@ -54,13 +54,16 @@ public class PresidentChronologicalComparator implements Comparator<President>{
         nameToChronologicalOrder.put("trump", 44);
         nameToChronologicalOrder.put("hclinton", 45);
         nameToChronologicalOrder.put("Trump2020", 46);
-        nameToChronologicalOrder.put("Biden2020", 48);
+        nameToChronologicalOrder.put("Biden2020", 47);
     };
 
     @Override
     public int compare(President o1, President o2) {
         assert (nameToChronologicalOrder.containsKey(o1.getName())) : "comparing a president without data on them";
         assert (nameToChronologicalOrder.containsKey(o2.getName())) : "comparing a president without data on them";
+        if (!nameToChronologicalOrder.containsKey(o1.getName()) || !nameToChronologicalOrder.containsKey(o2.getName())) {
+            return 0;
+        }
         return Integer.compare(nameToChronologicalOrder.get(o1.getName()), nameToChronologicalOrder.get(o2.getName()));
     }
 }
