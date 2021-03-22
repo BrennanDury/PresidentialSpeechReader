@@ -18,7 +18,6 @@ public class President {
     /**
      *
      * @param candidateFolder the candidate folder (Texts/coolidge)
-     * @throws FileNotFoundException if either parameter do not exist
      */
     public President(File candidateFolder){
         this.name = candidateFolder.getName();
@@ -87,13 +86,40 @@ public class President {
         line = line.toUpperCase();
         target = target.toUpperCase();
         int uses = 0;
-        String[] words = line.split(" ");
-        for (String word : words) {
-            if (checkWordIsTarget(word, target)) {
+        while (line.contains(target)) {
+            if (firstAppearanceIsWord(line, target)) {
                 uses++;
             }
+            line = line.substring(line.indexOf(target) + 1);
         }
         return uses;
+    }
+
+    /**
+     * Returns true if the first appearance of the string target is the word target
+     * @param line the line to look for the first appearance of target of
+     * @param target the target word
+     * @return true if the first appearance of target is the word target
+     * @spec.requires line contains target
+     */
+    private static boolean firstAppearanceIsWord(String line, String target) {
+        assert line.contains(target);
+        boolean found = true;
+        int indexBefore = line.indexOf(target) - 1;
+        if (indexBefore > -1) {
+            char charBefore = line.charAt(indexBefore);
+            if (charBefore > 65 && charBefore < 90) {
+                found = false;
+            }
+        }
+        int indexAfter = line.indexOf(target) + target.length();
+        if (indexAfter < line.length()) {
+            char charAfter = line.charAt(indexAfter);
+            if (charAfter > 65 && charAfter < 90) {
+                found = false;
+            }
+        }
+        return found;
     }
 
     /**
@@ -106,36 +132,11 @@ public class President {
     private static boolean appearsInLine(String line, String target) {
         line = line.toUpperCase();
         target = target.toUpperCase();
-        String[] words = line.split(" ");
-        for (String word : words) {
-            if (checkWordIsTarget(word, target)) {
+        while (line.contains(target)) {
+            if (firstAppearanceIsWord(line, target)) {
                  return true;
             }
-        }
-        return false;
-    }
-
-    /**
-     * Checks if the word is the target word, considering punctuation. A word made of multiple words combined with a punctuation mark like a hyphen
-     * count as the target word if the target word is any of those words.
-     * @param word the word to check
-     * @param target the target word
-     * @return true if the word is the target word
-     */
-    private static boolean checkWordIsTarget(String word, String target) {
-        if (word.contains(target)) {
-            char charBefore = word.charAt(word.indexOf(target) - 1);
-            if (charBefore < 65 || charBefore > 90) {
-                word = word.substring(word.indexOf(target));
-            }
-            int indexAfter = word.indexOf(target) + target.length();
-            char charAfter = word.charAt(indexAfter);
-            if (charAfter < 65 || charAfter > 90) {
-                word = word.substring(0, indexAfter);
-            }
-            if (word.equals(target)) {
-                return true;
-            }
+            line = line.substring(line.indexOf(target) + 1);
         }
         return false;
     }
