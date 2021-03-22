@@ -4,6 +4,7 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.HashSet;
 import java.util.Set;
+import java.util.zip.ZipEntry;
 
 /**
  * The set of all lines said by a candidate. Supports the notation folders "Texts" and "RevTexts".
@@ -90,7 +91,10 @@ public class President {
             if (firstAppearanceIsWord(line, target)) {
                 uses++;
             }
-            line = line.substring(line.indexOf(target) + 1);
+            line = line.substring(line.indexOf(target) + target.length());
+            while (!line.isEmpty() && line.charAt(0) >= 'A' && line.charAt(0) <= 'Z') {
+                line = line.substring(1);
+            }
         }
         return uses;
     }

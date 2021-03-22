@@ -14,8 +14,8 @@ public class PresidentTest {
     public void wantTest() {
         President hclinton = new President(new File("./src/resources/texts/hclinton"));
         President trump = new President(new File("./src/resources/texts/trump"));
+        assert (trump.getNumberUsesOfWord("want") == 1359) : trump.getNumberUsesOfWord("want");
         assert (hclinton.getNumberUsesOfWord("want") == 488) : hclinton.getNumberUsesOfWord("want");
-        assert (trump.getNumberUsesOfWord("want") == 1359);
     }
 
     @Test
@@ -96,9 +96,72 @@ public class PresidentTest {
     }
 
     @Test
-    public void separatedByHypthen() {
+    public void separatedByHyphen() {
         String line = "the-the";
         String target = "the";
+        assert President.numAppearancesInLine(line, target) == 2 : President.numAppearancesInLine(line, target);
+    }
+
+    @Test
+    public void sentence() {
+        String line = "The quick brown fox jumps over the lazy dog.";
+        String target = "the";
+        assert President.numAppearancesInLine(line, target) == 2 : President.numAppearancesInLine(line, target);
+    }
+
+    @Test
+    public void multiPartTarget() {
+        String line = "a a";
+        String target = "a a";
+        assert President.numAppearancesInLine(line, target) == 1 : President.numAppearancesInLine(line, target);
+    }
+
+    @Test
+    public void multiPartTarget2To3() { //what do I do with this
+        String line = "a a a";
+        String target = "a a";
+        assert President.numAppearancesInLine(line, target) == 1 : President.numAppearancesInLine(line, target);
+    }
+
+    @Test
+    public void multiPartTargetStartOtherWord() {
+        String line = "a ab";
+        String target = "a a";
+        assert President.numAppearancesInLine(line, target) == 0 : President.numAppearancesInLine(line, target);
+    }
+
+    @Test
+    public void multiPartTargetEndOtherWord() {
+        String line = "ba a";
+        String target = "a a";
+        assert President.numAppearancesInLine(line, target) == 0 : President.numAppearancesInLine(line, target);
+    }
+
+    @Test
+    public void multiPartTargetMiddleOtherWord() {
+        String line = "ba ab";
+        String target = "a a";
+        assert President.numAppearancesInLine(line, target) == 0 : President.numAppearancesInLine(line, target);
+    }
+
+    @Test
+    public void multiPartTarget1() {
+        String line = "a aa a";
+        String target = "a a";
+        assert President.numAppearancesInLine(line, target) == 0 : President.numAppearancesInLine(line, target);
+    }
+
+    @Test
+    public void multiPartTarget2() {
+        String line = "the thethe the";
+        String target = "the the";
+        assert President.numAppearancesInLine(line, target) == 0 : President.numAppearancesInLine(line, target);
+    }
+
+    @Test
+    public void multiPartTarget3() {
+        String line = "the the-the the";
+        String target = "the the";
         assert President.numAppearancesInLine(line, target) == 2 : President.numAppearancesInLine(line, target);
     }
 }
