@@ -1,6 +1,6 @@
 <title="State of the Union">
 <date="January 12, 1966">
-Mr. Speaker, Mr. main.President, members of the House and the Senate, my fellow Americans:
+Mr. Speaker, Mr. President, members of the House and the Senate, my fellow Americans:
 I come before you tonight to report on the State of the Union for the third time.
 I come here to thank you and to add my tribute, once more, to the nation's gratitude for this, the 89th Congress. This Congress has already reserved for itself an honored chapter in the history of America.
 Our nation tonight is engaged in a brutal and bitter conflict in Vietnam. Later on I want to discuss that struggle in some detail with you. It just must be the center of our concerns.
@@ -15,7 +15,7 @@ I recommend that you attack the wasteful and degrading poisoning of our rivers, 
 I recommend that you meet the growing menace of crime in the streets by building up law enforcement and by revitalizing the entire federal system from prevention to probation.
 I recommend that you take additional steps to insure equal justice to all of our people by effectively enforcing nondiscrimination in federal and state jury selection, by making it a serious federal crime to obstruct public and private efforts to secure civil rights, and by outlawing discrimination in the sale and rental of housing.
 I recommend that you help me modernize and streamline the federal government by creating a new Cabinet-level Department of Transportation and reorganizing several existing agencies. In turn, I will restructure our civil service in the top grades so that men and women can easily be assigned to jobs where they are most needed, and ability will be both required as well as rewarded.
-I will ask you to make it possible for members of the House of Representatives to work more effectively in the service of the nation through a constitutional amendment extending the term of a Congressman to four years, concurrent with that of the main.President.
+I will ask you to make it possible for members of the House of Representatives to work more effectively in the service of the nation through a constitutional amendment extending the term of a Congressman to four years, concurrent with that of the President.
 Because of Vietnam we cannot do all that we should, or all that we would like to do. We will ruthlessly attack waste and inefficiency. We will make sure that every dollar is spent with the thrift and with the commonsense which recognizes how hard the taxpayer worked in order to earn it.
 We will continue to meet the needs of our people by continuing to develop the Great Society.
 Last year alone the wealth that we produced increased $47 billion, and it will soar again this year to a total over $720 billion.
@@ -78,7 +78,7 @@ An America that is mighty beyond description -- yet living in a hostile or despa
 In this pursuit we helped rebuild Western Europe. We gave our aid to Greece and Turkey, and we defended the freedom of Berlin.
 In this pursuit we have helped new nations toward independence. We have extended the helping hand of the Peace Corps and carried forward the largest program of economic assistance in the world.
 And in this pursuit we work to build a hemisphere of democracy and of social justice.
-In this pursuit we have defended against Communist aggression -- in Korea under main.President Truman -- in the Formosa Straits under main.President Eisenhower -- in Cuba under main.President Kennedy -- and again in Vietnam.
+In this pursuit we have defended against Communist aggression -- in Korea under President Truman -- in the Formosa Straits under President Eisenhower -- in Cuba under President Kennedy -- and again in Vietnam.
 Tonight Vietnam must hold the center of our attention, but across the world problems and opportunities crowd in on the American Nation. I will discuss them fully in the months to come, and I will follow the five continuing lines of policy that America has followed under its last four Presidents.
 The first principle is strength. Tonight I can tell you that we are strong enough to keep all of our commitments. We will need expenditures of $58.3 billion for the next fiscal year to maintain this necessary defense might.
 While special Vietnam expenditures for the next fiscal year are estimated to increase by $5.8 billion, I can tell you that all the other expenditures put together in the entire federal budget will rise this coming year by only $0.6 billion. This is true because of the stringent cost-conscious economy program inaugurated in the Defense Department, and followed by the other departments of government.
@@ -109,7 +109,7 @@ History is on the side of freedom and is on the side of societies shaped from th
 That is why it has been necessary for us to defend this basic principle of our policy, to defend it in Berlin, in Korea, in Cuba -- and tonight in Vietnam.
 For tonight, as so many nights before, young Americans struggle and young Americans die in a distant land.
 Tonight, as so many nights before, the American Nation is asked to sacrifice the blood of its children and the fruits of its labor for the love of its freedom.
-How many times -- in my lifetime and in yours -- have the American people gathered, as they do now, to hear their main.President tell them of conflict and tell them of danger?
+How many times -- in my lifetime and in yours -- have the American people gathered, as they do now, to hear their President tell them of conflict and tell them of danger?
 Each time they have answered. They have answered with all the effort that the security and the freedom of this nation required.
 And they do again tonight in Vietnam. Not too many years ago Vietnam was a peaceful, if troubled, land. In the North was an independent Communist government. In the South a people struggled to build a nation, with the friendly help of the United States.
 There were some in South Vietnam who wished to force Communist rule on their own people. But their progress was slight. Their hope of success was dim. Then, little more than six years ago, North Vietnam decided on conquest. And from that day to this, soldiers and supplies have moved from North to South in a swelling stream that is swallowing the remnants of revolution in aggression.
@@ -153,6 +153,6 @@ Therefore, to know war is to know that there is still madness in this world.
 Many of you share the burden of this knowledge tonight with me. But there is a difference. For finally I must be the one to order our guns to fire, against all the most inward pulls of my desire. For we have children to teach, and we have sick to be cured, and we have men to be freed. There are poor to be lifted up, and there are cities to be built, and there is a world to be helped.
 Yet we do what we must.
 I am hopeful, and I will try as best I can, with everything I have got, to end this battle and to return our sons to their desires.
-Yet as long as others will challenge America's security and test the clearness of our beliefs with fire and steel, then we must stand or see the promise of two centuries tremble. I believe tonight that you do not want me to try that risk. And from that belief your main.President summons his strength for the trials that lie ahead in the days to come.
+Yet as long as others will challenge America's security and test the clearness of our beliefs with fire and steel, then we must stand or see the promise of two centuries tremble. I believe tonight that you do not want me to try that risk. And from that belief your President summons his strength for the trials that lie ahead in the days to come.
 The work must be our work now. Scarred by the weaknesses of man, with whatever guidance God may offer us, we must nevertheless and alone with our mortality, strive to ennoble the life of man on earth.
 Thank you, and goodnight.

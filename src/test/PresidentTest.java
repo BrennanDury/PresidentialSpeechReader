@@ -1,6 +1,6 @@
 package test;
 
-import main.President;
+import President;
 import org.junit.Test;
 import org.junit.Rule;
 import org.junit.rules.Timeout;

@@ -1,7 +1,7 @@
 <title="Establishing Rewards for the Arrest of Certain Confederate Officers">
 <date="May 2, 1865">
-Whereas it appears from evidence in the Bureau of Military Justice that the atrocious murder of the late main.President, Abraham Lincoln, and the attempted assassination of the Hon. William H. Seward, Secretary of State, were incited, concerted, and procured by and between Jefferson Davis, late of Richmond, Va., and Jacob Thompson, Clement C. Clay, Beverley Tucker, George N. Sanders, William C. Cleary, and other rebels and traitors against the Government of the United States harbored in Canada:
-Now, therefore, to the end that justice may be done, I, Andrew Johnson, main.President of the United States, do offer and promise for the arrest of said persons, or either of them, within the limits of the United States, so that they can be brought to trial, the following rewards:
+Whereas it appears from evidence in the Bureau of Military Justice that the atrocious murder of the late President, Abraham Lincoln, and the attempted assassination of the Hon. William H. Seward, Secretary of State, were incited, concerted, and procured by and between Jefferson Davis, late of Richmond, Va., and Jacob Thompson, Clement C. Clay, Beverley Tucker, George N. Sanders, William C. Cleary, and other rebels and traitors against the Government of the United States harbored in Canada:
+Now, therefore, to the end that justice may be done, I, Andrew Johnson, President of the United States, do offer and promise for the arrest of said persons, or either of them, within the limits of the United States, so that they can be brought to trial, the following rewards:
 One hundred thousand dollars for the arrest of Jefferson Davis.
 Twenty-five thousand dollars for the arrest of Clement C. Clay.
 Twenty-five thousand dollars for the arrest of Jacob Thompson, late of Mississippi.
@@ -12,7 +12,7 @@ The Provost-Marshal-General of the United States is directed to cause a descript
 In testimony whereof I have hereunto set my hand and caused the seal of the United States to be affixed.
 Done at the city of Washington, this 2d day of May, A. D. 1865, and of the Independence of the United States of America the eighty-ninth.
 ANDREW JOHNSON.
-By the main.President:
+By the President:
 W. HUNTER,
 Acting Secretary of State.
 Ordered, first. That all acts and proceedings of the political, military, and civil organizations which have been in a state of insurrection and rebellion within the State of Virginia against the authority and laws of the United States, and of which Jefferson Davis, John Letcher, and William Smith were late the respective chiefs, are declared null and void. All persons who shall exercise, claim, pretend, or attempt to exercise any political, military, or civil power, authority, jurisdiction, or right by, through, or under Jefferson Davis, late of the city of Richmond, and his confederates, or under John Letcher or William Smith and their confederates, or under any pretended political, military, or civil commission or authority issued by them or either of them since the 17th day of April, 1861, shall be deemed and taken as in rebellion against the United States, and shall be dealt with accordingly.
@@ -26,7 +26,7 @@ Eighth. The Secretary of the Interior will also put in force the laws relating t
 Ninth. That to carry into effect the guaranty by the Federal Constitution of a republican form of State government and afford the advantage and security of domestic laws, as well as to complete the reestablishment of the authority and laws of the United States and the full and complete restoration of peace within the limits aforesaid, Francis H. Peirpoint, governor of the State of Virginia, will be aided by the Federal Government so far as may be necessary in the lawful measures which he may take for the extension and administration of the State government throughout the geographical limits of said State.
 In testimony whereof I have hereunto set my hand and caused the seal of the United States to be affixed.
 ANDREW JOHNSON.
-By the main.President:
+By the President:
 W. HUNTER,
 Acting Secretary of State
 

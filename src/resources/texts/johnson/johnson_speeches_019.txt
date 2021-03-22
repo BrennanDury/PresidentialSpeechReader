@@ -3,8 +3,8 @@
 WAR DEPARTMENT,
 ADJUTANT-GENERAL'S OFFICE
 Whereas several commanders of military districts created by the acts of Congress known as the reconstruction acts have expressed doubts as to the proper construction thereof and in respect to some of their powers and duties under said acts, and have applied to the Executive for information in relation thereto; and
-Whereas the said acts of Congress have been referred to the Attorney-General for his opinion thereon, and the said acts and the opinion of the Attorney-General have been fully and carefully considered by the main.President in conference with the heads of the respective Departments:
-The main.President accepts the following as a practical interpretation of the aforesaid acts of Congress on the points therein presented, and directs the same to be transmitted to the respective military commanders for their information, in order that there may be uniformity in the execution of said acts:
+Whereas the said acts of Congress have been referred to the Attorney-General for his opinion thereon, and the said acts and the opinion of the Attorney-General have been fully and carefully considered by the President in conference with the heads of the respective Departments:
+The President accepts the following as a practical interpretation of the aforesaid acts of Congress on the points therein presented, and directs the same to be transmitted to the respective military commanders for their information, in order that there may be uniformity in the execution of said acts:
 1. The oath prescribed in the supplemental act defines all the qualifications required, and every person who can take that oath is entitled to have his name entered upon the list of voters.
 2. The board of registration have no authority to administer any other oath to the person applying for registration than this prescribed oath, nor to administer an oath to any other person touching the qualifications of the applicant or the falsity of the oath so taken by him. The act, to guard against falsity in the oath, provides that if false the person taking it shall be tried and punished for perjury.
 No provision is made for challenging the qualifications of the applicant or entering upon any trial or investigation of his qualifications, either by witnesses or any other form of proof.
@@ -39,7 +39,7 @@ This board, having the custody of the list of registered voters in the district 
 The board can not enter into any inquiry as to the qualifications of any person whose name is not on the registration list, or as to the qualifications of any person whose name is on the list.
 18. The mode of voting is provided in the act to be by ballot. The board will keep a record and poll book of the election, showing the votes, list of voters, and the persons elected by a plurality of the votes cast at the election, and make returns of these to the commanding general of the district.
 19. The board appointed for registration and for superintending the elections must take the oath prescribed by the act of Congress approved July 2, 1862, entitled "An act to prescribe an oath of office."
-By order of the main.President:
+By order of the President:
 E. D. TOWNSEND,
 Assistant Adjutant-General.
 
