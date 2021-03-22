@@ -29,9 +29,13 @@ public class Main {
     public static void main(String[] args) {
         TreeSet<President> presidents = presidents();
         for (President president : presidents) {
-            int uses = president.getNumberUsesOfWord("want");
+            int uses = president.getNumberUsesOfWord("com");
             int total = president.getTotalWords();
             System.out.println(president.getName() + ": " + uses + " out of " + total + " ratio: " + uses * 100000.0 / total);
+            for (String line : president.getEachLineWithWord("com")) {
+                System.out.println(line);
+            }
         }
+
     }
 }
