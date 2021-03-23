@@ -30,6 +30,27 @@ public class PresidentTest {
         assert (testPresident.getNumberUsesOfWord("kitty") == 0) : testPresident.getNumberUsesOfWord("kitty");
     }
 
+    /**
+     * Tests using the real speeches from the texts corpora. The numbers were found by manually searching for uses of those particular words
+     */
+    @Test
+    public void textsIntegrationRealDataTest() {
+        President hclinton = new President(new File("./src/resources/texts/hclinton"));
+        assert (hclinton.getNumberUsesOfWord("com") == 42) : hclinton.getNumberUsesOfWord("com");
+        President trump = new President(new File("./src/resources/texts/trump"));
+        assert (trump.getNumberUsesOfWord("com") == 1) : trump.getNumberUsesOfWord("com");
+    }
+
+    /**
+     * Tests using the real speeches from the rev-texts corpora. The numbers were found by manually searching for uses of those particular words
+     */
+    @Test
+    public void revTextsIntegrationRealDataTest() {
+        President biden = new President(new File("./src/resources/rev-texts/Biden2020"));
+        assert (biden.getNumberUsesOfWord("com") == 25) : biden.getNumberUsesOfWord("com");
+        President trump = new President(new File("./src/resources/rev-texts/Trump2020"));
+        assert (trump.getNumberUsesOfWord("com") == 0) : trump.getNumberUsesOfWord("com");
+    }
     @Test
     public void edgeCases() {
         String line = "the the thethe their bathe the catheter the. .the ..the .the. th.e ..the.. the-the";
