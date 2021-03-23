@@ -1,6 +1,7 @@
 package main;
 
 import java.io.File;
+import java.io.FilenameFilter;
 import java.util.TreeSet;
 
 public class Main {
@@ -18,7 +19,12 @@ public class Main {
     private static TreeSet<President> presidentsByNotation(String notationFolder) {
         TreeSet<President> presidents = new TreeSet<President>(new PresidentChronologicalComparator());
         File folder = new File(notationFolder);
-        File[] listOfFiles = folder.listFiles();
+        File[] listOfFiles = folder.listFiles(new FilenameFilter() {
+            @Override
+            public boolean accept(File dir, String name) {
+                return !name.equals(".DS_Store");
+            }
+        });
         for (File file : listOfFiles) {
             President president = new President(file);
             presidents.add(president);

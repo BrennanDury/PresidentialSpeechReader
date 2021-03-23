@@ -2,6 +2,7 @@ package main;
 
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.io.FilenameFilter;
 import java.util.HashSet;
 import java.util.Set;
 import java.util.zip.ZipEntry;
@@ -23,7 +24,13 @@ public class President {
     public President(File candidateFolder){
         this.name = candidateFolder.getName();
         this.linesByPresident = new HashSet<String>();
-        File[] speechFiles = candidateFolder.listFiles();
+        File[] speechFiles = candidateFolder.listFiles(new FilenameFilter() {
+            @Override
+            public boolean accept(File dir, String name) {
+                return !name.equals(".DS_Store");
+            }
+        });
+        assert speechFiles != null : candidateFolder.toString() + " " + candidateFolder.getName();
         for (File file : speechFiles) {
             linesByPresident.addAll(FileReader.readFile(file));
         }
