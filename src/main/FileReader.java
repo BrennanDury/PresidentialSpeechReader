@@ -69,7 +69,10 @@ public final class FileReader {
                 for (String tag : tags) {
                     if (line.length() >= tag.length() && line.startsWith(tag)) {
                         isSpeaker = true;
-                        lineToAdd = originalLine.substring(tag.length() + 1);
+                        lineToAdd = originalLine.substring(tag.length());
+                        if (!lineToAdd.isEmpty()) {
+                            lineToAdd = lineToAdd.substring(1);
+                        }
                         break;
                     }
                 }
