@@ -18,6 +18,7 @@ public final class FileReader {
         revTags.put("Trump2020", new HashSet<String>(Arrays.asList("Donald Trump:", "Donald J. Trump:", "President Trump:"))); //relies on an inconsistent rule of the text files to notate who is talking
         revTags.put("Biden2020", new HashSet<String>(Arrays.asList("Joe Biden:", "Joe Biden :"))); //relies on an inconsistent rule of the text files to notate who is talking
         revTags.put("test-rev-president", new HashSet<String>(Arrays.asList("President:", "President :")));
+        revTags.put("test-rev-president2", new HashSet<String>(Arrays.asList("President2:", "President2 :")));
     }
 
     /**

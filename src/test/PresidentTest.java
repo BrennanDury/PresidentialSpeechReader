@@ -51,6 +51,25 @@ public class PresidentTest {
         President trump = new President(new File("./src/resources/rev-texts/Trump2020"));
         assert (trump.getNumberUsesOfWord("com") == 0) : trump.getNumberUsesOfWord("com");
     }
+
+    @Test
+    public void textsMultipleSpeechesIntegrationTest() {
+        President multi = new President(new File("./src/resources/test-texts/test-president2"));
+        assert (multi.getNumberUsesOfWord("amet") == 8) : multi.getNumberUsesOfWord("amet");
+        assert (multi.getNumberUsesOfWord("at") == 6) : multi.getNumberUsesOfWord("at");
+        assert (multi.getNumberUsesOfWord("kitty") == 0) : multi.getNumberUsesOfWord("kitty");
+        assert (multi.getNumberUsesOfWord("aliquam") == 4) : multi.getNumberUsesOfWord("aliquam");
+    }
+
+    @Test
+    public void revTextsMultipleSpeechesIntegrationTest() {
+        President multi = new President(new File("./src/resources/test-rev-texts/test-rev-president2"));
+        assert (multi.getNumberUsesOfWord("amet") == 8) : multi.getNumberUsesOfWord("amet");
+        assert (multi.getNumberUsesOfWord("at") == 6) : multi.getNumberUsesOfWord("at");
+        assert (multi.getNumberUsesOfWord("kitty") == 0) : multi.getNumberUsesOfWord("kitty");
+        assert (multi.getNumberUsesOfWord("aliquam") == 4) : multi.getNumberUsesOfWord("aliquam");
+    }
+
     @Test
     public void edgeCases() {
         String line = "the the thethe their bathe the catheter the. .the ..the .the. th.e ..the.. the-the";

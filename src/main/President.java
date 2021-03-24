@@ -35,7 +35,6 @@ public class President {
             linesByPresident.addAll(FileReader.readFile(file));
         }
         assert(linesByPresident != null);
-        assert (!linesByPresident.isEmpty()) : candidateFolder.getName();
     }
 
     /**
