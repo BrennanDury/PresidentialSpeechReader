@@ -62,19 +62,20 @@ public final class FileReader {
         while (sc.hasNext()) {
             String originalLine = sc.nextLine();
             String line = originalLine.toUpperCase();
+            String lineToAdd = originalLine;
             boolean isSpeaker = true; //default true unless theres a tag
             if (line.startsWith("<")) {
                 isSpeaker = false; //there is a tag, false until proven the tag is correct
                 for (String tag : tags) {
                     if (line.length() >= tag.length() && line.startsWith(tag)) {
                         isSpeaker = true;
-                        line = line.substring(tag.length());
+                        lineToAdd = originalLine.substring(tag.length() + 1);
                         break;
                     }
                 }
             }
             if (isSpeaker) {
-                linesBySpeaker.add(line);
+                linesBySpeaker.add(lineToAdd);
             }
         }
         return linesBySpeaker;
